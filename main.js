@@ -76,7 +76,7 @@ function checkAnswer() {
     setTimeout(function () {
         for (let i = 0; i < options.length; i++) {
             const option = options[i];
-            option.style.background = "#ecd450";
+            option.style.background = "white";
             option.style.color = "black";
         }
         quiz.update();

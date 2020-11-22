@@ -1,14 +1,16 @@
+
 body {
-    background-color: darkslateblue;
+    background-color: #755139;
 }
 .main-holder {
     height: 100vh;
-    background-image: url(img/soka.jpg);
-    background-size: cover;
+    background-image: url(img/kviz.webp);
+    background-repeat: no-repeat;
 }
 .navbar-light {
     opacity: 0.8;
 }
+
 .main-holder .btn {
     width: 50vw;
     position: absolute;
@@ -30,7 +32,7 @@ body {
     top: 37%;
     left: 50%;
     transform: translateX(-50%);
-    box-shadow: 0 0 8px #ddd;
+    box-shadow: 0 0 8px white;
     padding: 20px 0;
 }
 .option {
@@ -40,7 +42,7 @@ body {
     border-radius: 6px;
     margin: 2.5%;
     float: left;
-    background-color: #ecd450;
+    background-color: whitesmoke;
     text-align: center;
     font-size: 20px;
     line-height: 94px;
@@ -66,7 +68,6 @@ body {
 .the-end {
     width: 100vw;
     height: 100vh;
-
     display: none;
 }
 .display-points {
@@ -75,6 +76,6 @@ body {
     line-height: 100vh;
     font-size: 200px;
     text-align: center;
-    color: tomato;
+    color: white;
     text-shadow: 1px 1px 8px gold;
 }
