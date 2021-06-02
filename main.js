@@ -32,10 +32,9 @@ function checkAnswer() {
     let options = $(".option");
 
     if (answer) {
-        document.querySelector("#win_sound").play();
         for (let i = 0; i < options.length; i++) {
             const option = options[i];
-            option.style.background = "tomato";
+            option.style.background = "red";
         }
 
         $("#points").animate(
@@ -57,14 +56,14 @@ function checkAnswer() {
         for (let i = 0; i < options.length; i++) {
             const option = options[i];
             if (option.innerHTML === quiz.getCurrentQuestion().answer) {
-                option.style.background = "green";
+                option.style.background = " #3366cc";
                 option.style.color = "white";
             } else {
-                option.style.background = "tomato";
+                option.style.background = " red";
                 option.style.color = "white";
             }
         }
-        this.style.background = "tomato";
+        this.style.background = " red";
         this.style.color = "white";
         this.innerHTML += "<div class='error'></div>";
         for (let i = 0; i < options.length; i++) {
@@ -81,7 +80,7 @@ function checkAnswer() {
         }
         quiz.update();
         startGame();
-    }, 3000);
+    }, 1000);
 }
 
 function displayEnd() {
